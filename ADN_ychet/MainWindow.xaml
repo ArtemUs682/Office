@@ -1,0 +1,129 @@
+﻿<Window x:Class="ADN_ychet.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ADN_ychet"
+        mc:Ignorable="d"
+            xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     Title="MainWindow" Height="450" Width="800">
+
+
+    <!--Title="MainWindow" Height="450" Width="800"  WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None"-->
+    
+
+
+    <Grid>
+        <TabControl HorizontalAlignment="Left" Height="450" VerticalAlignment="Top" Width="800" Background="White">
+
+            <TabItem Header="Учёт">
+                <Grid Margin="-11,-2,-2,-5" RenderTransformOrigin="0.501,0.507">
+
+
+                    <MediaElement x:Name="gif" MediaEnded="gif_MediaEnded" UnloadedBehavior="Manual" LoadedBehavior="Play" Stretch="Fill"
+                     HorizontalAlignment="Left" Height="450" VerticalAlignment="Center" Width="846" 
+                     Source="D:\Учёт\ADN_ychet\ADN_ychet\image\Blue - 9809.mp4" Margin="0,0,0,0"/>
+
+                    <Button Content="" 
+                            HorizontalAlignment="Left" 
+                            Margin="745,10,0,0"
+                            VerticalAlignment="Top" Width="38" 
+                            Click="Exit_Click" FontSize="16" FontFamily="Unispace" BorderBrush="{x:Null}">
+                        <Button.Background>
+                            <ImageBrush ImageSource="image/cross_icon_160913.ico" Stretch="Uniform"/>
+                        </Button.Background>
+                    </Button>
+                    <Button Content="Добавить" x:Name="AddBut" HorizontalAlignment="Left" Margin="55,81,0,0" VerticalAlignment="Top" Width="133"  Height="28"/>
+                    <Button Content="Редактировать" x:Name="RedBut" HorizontalAlignment="Left" Margin="55,180,0,0" VerticalAlignment="Top" Width="133" Height="28"/>
+                    <Button Content="Удалить" x:Name="DelBut" HorizontalAlignment="Left" Margin="55,132,0,0" VerticalAlignment="Top" Width="133" Height="28"/>
+                    <Image x:Name="RedImag" HorizontalAlignment="Left" Height="28" Margin="16,180,0,0" VerticalAlignment="Top" Width="30" Source="image/edit_icon_160910.ico" />
+                    <Image x:Name="addImag" HorizontalAlignment="Left" Height="28" Margin="16,81,0,0" VerticalAlignment="Top" Width="30" Source="image/add_plus_insert_icon_160937.ico"/>
+                    <Image x:Name="DelImag" HorizontalAlignment="Left" Height="34" Margin="16,126,0,0" VerticalAlignment="Top" Width="30" Source="image/seo-social-web-network-internet_262_icon-icons.com_61518.ico"  Stretch="Fill"/>
+                    <ListBox HorizontalAlignment="Left" x:Name="list1" Height="340" Margin="240,0,0,0" VerticalAlignment="Center" Width="500">
+                        <DataGrid HorizontalAlignment="Left" Height="320" VerticalAlignment="Center" Width="450" Background="#FFF8FFCF" />
+                        <DataGrid HorizontalAlignment="Left" Height="320" VerticalAlignment="Center" Width="450" Background="#FFD3FFCF" />
+                        <DataGrid HorizontalAlignment="Left" Height="320" VerticalAlignment="Center" Width="450" Background="#FFCFF6FF" />
+                    </ListBox>
+
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Статистика">
+                <TabItem.Triggers>
+                    <EventTrigger RoutedEvent="Loaded">
+                        <EventTrigger.Actions>
+                            <BeginStoryboard>
+                                <Storyboard TargetProperty="Width"  TargetName="gridstats" >
+                                    <DoubleAnimation From="0" To="500" Duration="0:0:1"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger.Actions>
+                    </EventTrigger>
+                </TabItem.Triggers>
+            
+                <Grid Margin="0,-2,0,-5" Height="429" VerticalAlignment="Bottom">
+
+                    <MediaElement x:Name="gif2" MediaEnded="gif_MediaEnded" UnloadedBehavior="Manual" LoadedBehavior="Play" Stretch="Fill"
+                     HorizontalAlignment="Left" Height="450" VerticalAlignment="Center" Width="868" 
+                     Source="D:\Учёт\ADN_ychet\ADN_ychet\image\Blue - 9809.mp4" Margin="-22,0,-52,-21"/>
+
+                    <Button Content="" HorizontalAlignment="Left" Margin="29,229,0,0" VerticalAlignment="Top" Width="70" Height="64" RenderTransformOrigin="0.571,-0.879" BorderBrush="{x:Null}">
+                        <Button.Background>
+                            <ImageBrush ImageSource="image/computermouse_78940.ico"/>
+                        </Button.Background>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="118,229,0,0" VerticalAlignment="Top" Width="79" Height="64" BorderBrush="{x:Null}">
+                        <Button.Background>
+                            <ImageBrush ImageSource="image/desk-chair_96892.ico"/>
+                        </Button.Background>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="29,33,0,0" VerticalAlignment="Top" Width="74" BorderBrush="{x:Null}" Foreground="#DDFFFFFF" Height="56">
+                        <Button.Background>
+                            <ImageBrush ImageSource="image/comupter_desktop_mac_monitor_imac_display_screen_icon-icons.com_53482.ico"/>
+                        </Button.Background>
+                    </Button>
+                    <Button Content="" Margin="118,130,584,0" VerticalAlignment="Top" Height="54" RenderTransformOrigin="0.459,1.037">
+                        <Button.Background>
+                            <ImageBrush ImageSource="image/keyboard_78941.ico" Stretch="Uniform"/>
+                        </Button.Background>
+                        <Button.BorderBrush>
+                            <ImageBrush/>
+                        </Button.BorderBrush>
+                    </Button>
+                    <DataGrid x:Name="gridstats" HorizontalAlignment="Left" Height="291" Margin="236,41,0,0" VerticalAlignment="Top" Width="500" Background="#FFB8DFFF"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="153,33,0,0" VerticalAlignment="Top" Width="34" Height="56" BorderBrush="{x:Null}" RenderTransformOrigin="-0.794,0.491">
+                        <Button.Background>
+                            <ImageBrush ImageSource="image/pcunit_102232.ico"/>
+                        </Button.Background>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="21,128,0,0" VerticalAlignment="Top" Width="82" BorderBrush="{x:Null}" Height="56">
+                        <Button.Background>
+                            <ImageBrush ImageSource="image/table_desk_icon_150978.ico"/>
+                        </Button.Background>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="29,320,0,0" VerticalAlignment="Top" Width="53" BorderBrush="{x:Null}" Height="45">
+                        <Button.Background>
+                            <ImageBrush ImageSource="image/printer_78936 (1).ico"/>
+                        </Button.Background>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="118,314,0,0" VerticalAlignment="Top" Width="69" Height="51" BorderBrush="{x:Null}">
+                        <Button.Background>
+                            <ImageBrush ImageSource="image/projector-with-big-len_icon-icons.com_68147.ico"/>
+                        </Button.Background>
+                    </Button>
+                    <Button Content="" 
+                        HorizontalAlignment="Left" 
+                        Margin="748,10,0,0"
+                        VerticalAlignment="Top" Width="38" 
+                        Click="Exit_Click" FontSize="16" FontFamily="Unispace" BorderBrush="{x:Null}">
+                        <Button.Background>
+                            <ImageBrush ImageSource="image/cross_icon_160913.ico" Stretch="Uniform"/>
+                        </Button.Background>
+                    </Button>
+
+
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
