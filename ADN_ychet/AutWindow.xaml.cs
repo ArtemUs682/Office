@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SQLite;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,6 +20,8 @@ namespace ADN_ychet
     /// </summary>
     public partial class AutWindow : Window
     {
+        AppContext db = new AppContext();
+        SQLiteConnection con = new SQLiteConnection("Data Source =.\\OfficeDB.db");
         public AutWindow()
         {
             InitializeComponent();
