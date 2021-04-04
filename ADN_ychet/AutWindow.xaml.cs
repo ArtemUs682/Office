@@ -23,5 +23,12 @@ namespace ADN_ychet
         {
             InitializeComponent();
         }
+
+        private void X_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+        
     }
 }
