@@ -22,3 +22,105 @@ D:\Учёт\ADN_ychet\ADN_ychet\bin\Debug\MaterialDesignThemes.Wpf.xml
 D:\Учёт\ADN_ychet\ADN_ychet\obj\Debug\ADN_ychet.csproj.CopyComplete
 D:\Учёт\ADN_ychet\ADN_ychet\obj\Debug\App.baml
 D:\Учёт\ADN_ychet\ADN_ychet\obj\Debug\ADN_ychet_Content.g.cs
+C:\Users\Artem\Desktop\Проекты (учёба)\ADN_ychet\ADN_ychet\bin\Debug\ADN_ychet.exe.config
+C:\Users\Artem\Desktop\Проекты (учёба)\ADN_ychet\ADN_ychet\bin\Debug\ADN_ychet.exe
+C:\Users\Artem\Desktop\Проекты (учёба)\ADN_ychet\ADN_ychet\bin\Debug\ADN_ychet.pdb
+C:\Users\Artem\Desktop\Проекты (учёба)\ADN_ychet\ADN_ychet\bin\Debug\MaterialDesignColors.dll
+C:\Users\Artem\Desktop\Проекты (учёба)\ADN_ychet\ADN_ychet\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Artem\Desktop\Проекты (учёба)\ADN_ychet\ADN_ychet\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Artem\Desktop\Проекты (учёба)\ADN_ychet\ADN_ychet\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Artem\Desktop\Проекты (учёба)\ADN_ychet\ADN_ychet\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Artem\Desktop\Проекты (учёба)\ADN_ychet\ADN_ychet\obj\Debug\ADN_ychet.csprojAssemblyReference.cache
+C:\Users\Artem\Desktop\Проекты (учёба)\ADN_ychet\ADN_ychet\obj\Debug\AutWindow.g.cs
+C:\Users\Artem\Desktop\Проекты (учёба)\ADN_ychet\ADN_ychet\obj\Debug\MainWindow.g.cs
+C:\Users\Artem\Desktop\Проекты (учёба)\ADN_ychet\ADN_ychet\obj\Debug\App.g.cs
+C:\Users\Artem\Desktop\Проекты (учёба)\ADN_ychet\ADN_ychet\obj\Debug\ADN_ychet_Content.g.cs
+C:\Users\Artem\Desktop\Проекты (учёба)\ADN_ychet\ADN_ychet\obj\Debug\ADN_ychet_MarkupCompile.cache
+C:\Users\Artem\Desktop\Проекты (учёба)\ADN_ychet\ADN_ychet\obj\Debug\ADN_ychet_MarkupCompile.lref
+C:\Users\Artem\Desktop\Проекты (учёба)\ADN_ychet\ADN_ychet\obj\Debug\App.baml
+C:\Users\Artem\Desktop\Проекты (учёба)\ADN_ychet\ADN_ychet\obj\Debug\AutWindow.baml
+C:\Users\Artem\Desktop\Проекты (учёба)\ADN_ychet\ADN_ychet\obj\Debug\MainWindow.baml
+C:\Users\Artem\Desktop\Проекты (учёба)\ADN_ychet\ADN_ychet\obj\Debug\ADN_ychet.g.resources
+C:\Users\Artem\Desktop\Проекты (учёба)\ADN_ychet\ADN_ychet\obj\Debug\ADN_ychet.Properties.Resources.resources
+C:\Users\Artem\Desktop\Проекты (учёба)\ADN_ychet\ADN_ychet\obj\Debug\ADN_ychet.csproj.GenerateResource.cache
+C:\Users\Artem\Desktop\Проекты (учёба)\ADN_ychet\ADN_ychet\obj\Debug\ADN_ychet.csproj.CoreCompileInputs.cache
+C:\Users\Artem\Desktop\Проекты (учёба)\ADN_ychet\ADN_ychet\obj\Debug\ADN_ychet.csproj.CopyComplete
+C:\Users\Artem\Desktop\Проекты (учёба)\ADN_ychet\ADN_ychet\obj\Debug\ADN_ychet.exe
+C:\Users\Artem\Desktop\Проекты (учёба)\ADN_ychet\ADN_ychet\obj\Debug\ADN_ychet.pdb
+C:\Users\Artem\Desktop\Проекты (учёба)\ADN_ychet\ADN_ychet\bin\Debug\OfficeDB.db
+C:\Users\Artem\Desktop\Проекты (учёба)\ADN_ychet\ADN_ychet\bin\Debug\EntityFramework.dll
+C:\Users\Artem\Desktop\Проекты (учёба)\ADN_ychet\ADN_ychet\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Artem\Desktop\Проекты (учёба)\ADN_ychet\ADN_ychet\bin\Debug\System.Data.SQLite.dll
+C:\Users\Artem\Desktop\Проекты (учёба)\ADN_ychet\ADN_ychet\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Artem\Desktop\Проекты (учёба)\ADN_ychet\ADN_ychet\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Artem\Desktop\Проекты (учёба)\ADN_ychet\ADN_ychet\bin\Debug\EntityFramework.xml
+C:\Users\Artem\Desktop\Проекты (учёба)\ADN_ychet\ADN_ychet\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Artem\Desktop\Проекты (учёба)\ADN_ychet\ADN_ychet\bin\Debug\System.Data.SQLite.xml
+D:\ADN_ychet\ADN_ychet\bin\Debug\OfficeDB.db
+D:\ADN_ychet\ADN_ychet\bin\Debug\ADN_ychet.exe.config
+D:\ADN_ychet\ADN_ychet\bin\Debug\ADN_ychet.exe
+D:\ADN_ychet\ADN_ychet\bin\Debug\ADN_ychet.pdb
+D:\ADN_ychet\ADN_ychet\bin\Debug\EntityFramework.dll
+D:\ADN_ychet\ADN_ychet\bin\Debug\EntityFramework.SqlServer.dll
+D:\ADN_ychet\ADN_ychet\bin\Debug\MaterialDesignColors.dll
+D:\ADN_ychet\ADN_ychet\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\ADN_ychet\ADN_ychet\bin\Debug\System.Data.SQLite.dll
+D:\ADN_ychet\ADN_ychet\bin\Debug\System.Data.SQLite.EF6.dll
+D:\ADN_ychet\ADN_ychet\bin\Debug\System.Data.SQLite.Linq.dll
+D:\ADN_ychet\ADN_ychet\bin\Debug\EntityFramework.xml
+D:\ADN_ychet\ADN_ychet\bin\Debug\EntityFramework.SqlServer.xml
+D:\ADN_ychet\ADN_ychet\bin\Debug\MaterialDesignColors.pdb
+D:\ADN_ychet\ADN_ychet\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\ADN_ychet\ADN_ychet\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\ADN_ychet\ADN_ychet\bin\Debug\System.Data.SQLite.xml
+D:\ADN_ychet\ADN_ychet\obj\Debug\ADN_ychet.csprojAssemblyReference.cache
+D:\ADN_ychet\ADN_ychet\obj\Debug\AutWindow.g.cs
+D:\ADN_ychet\ADN_ychet\obj\Debug\MainWindow.g.cs
+D:\ADN_ychet\ADN_ychet\obj\Debug\App.g.cs
+D:\ADN_ychet\ADN_ychet\obj\Debug\ADN_ychet_Content.g.cs
+D:\ADN_ychet\ADN_ychet\obj\Debug\ADN_ychet_MarkupCompile.cache
+D:\ADN_ychet\ADN_ychet\obj\Debug\ADN_ychet_MarkupCompile.lref
+D:\ADN_ychet\ADN_ychet\obj\Debug\App.baml
+D:\ADN_ychet\ADN_ychet\obj\Debug\AutWindow.baml
+D:\ADN_ychet\ADN_ychet\obj\Debug\MainWindow.baml
+D:\ADN_ychet\ADN_ychet\obj\Debug\ADN_ychet.g.resources
+D:\ADN_ychet\ADN_ychet\obj\Debug\ADN_ychet.Properties.Resources.resources
+D:\ADN_ychet\ADN_ychet\obj\Debug\ADN_ychet.csproj.GenerateResource.cache
+D:\ADN_ychet\ADN_ychet\obj\Debug\ADN_ychet.csproj.CoreCompileInputs.cache
+D:\ADN_ychet\ADN_ychet\obj\Debug\ADN_ychet.csproj.CopyComplete
+D:\ADN_ychet\ADN_ychet\obj\Debug\ADN_ychet.exe
+D:\ADN_ychet\ADN_ychet\obj\Debug\ADN_ychet.pdb
+F:\ADN_ychet\ADN_ychet\bin\Debug\OfficeDB.db
+F:\ADN_ychet\ADN_ychet\bin\Debug\ADN_ychet.exe.config
+F:\ADN_ychet\ADN_ychet\bin\Debug\ADN_ychet.exe
+F:\ADN_ychet\ADN_ychet\bin\Debug\ADN_ychet.pdb
+F:\ADN_ychet\ADN_ychet\bin\Debug\EntityFramework.dll
+F:\ADN_ychet\ADN_ychet\bin\Debug\EntityFramework.SqlServer.dll
+F:\ADN_ychet\ADN_ychet\bin\Debug\MaterialDesignColors.dll
+F:\ADN_ychet\ADN_ychet\bin\Debug\MaterialDesignThemes.Wpf.dll
+F:\ADN_ychet\ADN_ychet\bin\Debug\System.Data.SQLite.dll
+F:\ADN_ychet\ADN_ychet\bin\Debug\System.Data.SQLite.EF6.dll
+F:\ADN_ychet\ADN_ychet\bin\Debug\System.Data.SQLite.Linq.dll
+F:\ADN_ychet\ADN_ychet\bin\Debug\EntityFramework.xml
+F:\ADN_ychet\ADN_ychet\bin\Debug\EntityFramework.SqlServer.xml
+F:\ADN_ychet\ADN_ychet\bin\Debug\MaterialDesignColors.pdb
+F:\ADN_ychet\ADN_ychet\bin\Debug\MaterialDesignThemes.Wpf.pdb
+F:\ADN_ychet\ADN_ychet\bin\Debug\MaterialDesignThemes.Wpf.xml
+F:\ADN_ychet\ADN_ychet\bin\Debug\System.Data.SQLite.xml
+F:\ADN_ychet\ADN_ychet\obj\Debug\ADN_ychet.csprojAssemblyReference.cache
+F:\ADN_ychet\ADN_ychet\obj\Debug\AutWindow.g.cs
+F:\ADN_ychet\ADN_ychet\obj\Debug\MainWindow.g.cs
+F:\ADN_ychet\ADN_ychet\obj\Debug\App.g.cs
+F:\ADN_ychet\ADN_ychet\obj\Debug\ADN_ychet_Content.g.cs
+F:\ADN_ychet\ADN_ychet\obj\Debug\ADN_ychet_MarkupCompile.cache
+F:\ADN_ychet\ADN_ychet\obj\Debug\ADN_ychet_MarkupCompile.lref
+F:\ADN_ychet\ADN_ychet\obj\Debug\App.baml
+F:\ADN_ychet\ADN_ychet\obj\Debug\AutWindow.baml
+F:\ADN_ychet\ADN_ychet\obj\Debug\MainWindow.baml
+F:\ADN_ychet\ADN_ychet\obj\Debug\ADN_ychet.g.resources
+F:\ADN_ychet\ADN_ychet\obj\Debug\ADN_ychet.Properties.Resources.resources
+F:\ADN_ychet\ADN_ychet\obj\Debug\ADN_ychet.csproj.GenerateResource.cache
+F:\ADN_ychet\ADN_ychet\obj\Debug\ADN_ychet.csproj.CoreCompileInputs.cache
+F:\ADN_ychet\ADN_ychet\obj\Debug\ADN_ychet.csproj.CopyComplete
+F:\ADN_ychet\ADN_ychet\obj\Debug\ADN_ychet.exe
+F:\ADN_ychet\ADN_ychet\obj\Debug\ADN_ychet.pdb

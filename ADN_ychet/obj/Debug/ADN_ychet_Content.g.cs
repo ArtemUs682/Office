@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/blue%20-%209809.mp4")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("officedb.db")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/b.mp4")]
 
 

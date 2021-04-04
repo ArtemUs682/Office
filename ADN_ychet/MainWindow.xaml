@@ -22,7 +22,7 @@
 
                     <MediaElement x:Name="gif" MediaEnded="gif_MediaEnded" UnloadedBehavior="Manual" LoadedBehavior="Play" Stretch="Fill"
                      HorizontalAlignment="Left" Height="450" VerticalAlignment="Center" Width="846" 
-                     Source="D:\Учёт\ADN_ychet\ADN_ychet\image\Blue - 9809.mp4" Margin="0,0,0,0"/>
+                     Source="image/B.mp4" Margin="0,0,0,0" Balance="-2"/>
 
                     <Button Content="" 
                             HorizontalAlignment="Left" 
@@ -33,7 +33,7 @@
                             <ImageBrush ImageSource="image/cross_icon_160913.ico" Stretch="Uniform"/>
                         </Button.Background>
                     </Button>
-                    <Button Content="Добавить" x:Name="AddBut" HorizontalAlignment="Left" Margin="55,81,0,0" VerticalAlignment="Top" Width="133"  Height="28"/>
+                    <Button Content="Добавить" x:Name="AddBut" HorizontalAlignment="Left" Margin="55,81,0,0" VerticalAlignment="Top" Width="133"  Height="28" Click="AddBut_Click"/>
                     <Button Content="Редактировать" x:Name="RedBut" HorizontalAlignment="Left" Margin="55,180,0,0" VerticalAlignment="Top" Width="133" Height="28"/>
                     <Button Content="Удалить" x:Name="DelBut" HorizontalAlignment="Left" Margin="55,132,0,0" VerticalAlignment="Top" Width="133" Height="28"/>
                     <Image x:Name="RedImag" HorizontalAlignment="Left" Height="28" Margin="16,180,0,0" VerticalAlignment="Top" Width="30" Source="image/edit_icon_160910.ico" />

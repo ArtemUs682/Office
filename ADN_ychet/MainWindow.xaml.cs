@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Media.Animation;
+using System.Data.SQLite;
+using System.Data;
 
 namespace ADN_ychet
 {
@@ -21,6 +23,8 @@ namespace ADN_ychet
     /// </summary>
     public partial class MainWindow : Window
     {
+        AppContext db = new AppContext();
+        SQLiteConnection con = new SQLiteConnection("Data Source =.\\OfficeDB.db");
         public MainWindow()
         {
             InitializeComponent();
@@ -50,7 +54,10 @@ namespace ADN_ychet
             animList.From = 0;
             animList.To = 500;
             animList.Duration = TimeSpan.FromSeconds(1);
-           // gridstats.BeginAnimation(ListBox.WidthProperty, animGrid);
+            // gridstats.BeginAnimation(ListBox.WidthProperty, animGrid);
+
+
+           
         }
 
         private void Exit_Click(object sender, RoutedEventArgs e)
@@ -68,6 +75,11 @@ namespace ADN_ychet
         {
             gif.Position = new TimeSpan(0, 0, 1);
             gif.Play();
+        }
+
+        private void AddBut_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }
