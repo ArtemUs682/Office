@@ -6,11 +6,11 @@
         xmlns:local="clr-namespace:ADN_ychet"
         mc:Ignorable="d"
             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-     Title="MainWindow" Height="450" Width="800">
+     Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize" WindowStyle="None">
 
 
     <!--Title="MainWindow" Height="450" Width="800"  WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None"-->
-    
+
 
 
     <Grid>
@@ -22,7 +22,7 @@
 
                     <MediaElement x:Name="gif" MediaEnded="gif_MediaEnded" UnloadedBehavior="Manual" LoadedBehavior="Play" Stretch="Fill"
                      HorizontalAlignment="Left" Height="450" VerticalAlignment="Center" Width="846" 
-                     Source="image/B.mp4" Margin="0,0,0,0" Balance="-2"/>
+                     Source="D:\Учёт\gid\Office\ADN_ychet\image\B.mp4" Margin="0,0,0,0" Balance="-2"/>
 
                     <Button Content="" 
                             HorizontalAlignment="Left" 
@@ -39,11 +39,20 @@
                     <Image x:Name="RedImag" HorizontalAlignment="Left" Height="28" Margin="16,180,0,0" VerticalAlignment="Top" Width="30" Source="image/edit_icon_160910.ico" />
                     <Image x:Name="addImag" HorizontalAlignment="Left" Height="28" Margin="16,81,0,0" VerticalAlignment="Top" Width="30" Source="image/add_plus_insert_icon_160937.ico"/>
                     <Image x:Name="DelImag" HorizontalAlignment="Left" Height="34" Margin="16,126,0,0" VerticalAlignment="Top" Width="30" Source="image/seo-social-web-network-internet_262_icon-icons.com_61518.ico"  Stretch="Fill"/>
-                    <ListBox HorizontalAlignment="Left" x:Name="list1" Height="340" Margin="240,0,0,0" VerticalAlignment="Center" Width="500">
+                    <!--<ListBox HorizontalAlignment="Left" x:Name="list1" Height="340" Margin="240,0,0,0" VerticalAlignment="Center" Width="500">
                         <DataGrid HorizontalAlignment="Left" Height="320" VerticalAlignment="Center" Width="450" Background="#FFF8FFCF" />
                         <DataGrid HorizontalAlignment="Left" Height="320" VerticalAlignment="Center" Width="450" Background="#FFD3FFCF" />
                         <DataGrid HorizontalAlignment="Left" Height="320" VerticalAlignment="Center" Width="450" Background="#FFCFF6FF" />
-                    </ListBox>
+                    </ListBox>-->
+
+                    <ScrollViewer x:Name="list1" HorizontalAlignment="Left" Height="300" Margin="216,50,0,0" VerticalAlignment="Top" Width="520">
+                        <Grid Height="1241" Width="520">
+                            <DataGrid HorizontalAlignment="Left" Height="300" Margin="0,10,0,0" VerticalAlignment="Top" Width="500" Background="#FFC1FCFF"/>
+                            <DataGrid HorizontalAlignment="Left" Height="300" Margin="0,660,0,0" VerticalAlignment="Top" Width="500"  Background="#FFB4CFFD"/>
+                            <DataGrid HorizontalAlignment="Left" Height="300" Margin="0,330,0,0" VerticalAlignment="Top" Width="500" Background="#FF9AFDF0"/>
+                        </Grid>
+
+                    </ScrollViewer>
 
 
                 </Grid>
@@ -60,12 +69,12 @@
                         </EventTrigger.Actions>
                     </EventTrigger>
                 </TabItem.Triggers>
-            
+
                 <Grid Margin="0,-2,0,-5" Height="429" VerticalAlignment="Bottom">
 
                     <MediaElement x:Name="gif2" MediaEnded="gif_MediaEnded" UnloadedBehavior="Manual" LoadedBehavior="Play" Stretch="Fill"
-                     HorizontalAlignment="Left" Height="450" VerticalAlignment="Center" Width="868" 
-                     Source="D:\Учёт\ADN_ychet\ADN_ychet\image\Blue - 9809.mp4" Margin="-22,0,-52,-21"/>
+                     HorizontalAlignment="Left" Height="450" VerticalAlignment="Center" Width="816" 
+                     Source="D:\Учёт\ADN_ychet\ADN_ychet\image\Blue - 9809.mp4" Margin="-22,0,0,-21"/>
 
                     <Button Content="" HorizontalAlignment="Left" Margin="29,229,0,0" VerticalAlignment="Top" Width="70" Height="64" RenderTransformOrigin="0.571,-0.879" BorderBrush="{x:Null}">
                         <Button.Background>
@@ -90,7 +99,7 @@
                             <ImageBrush/>
                         </Button.BorderBrush>
                     </Button>
-                    <DataGrid x:Name="gridstats" HorizontalAlignment="Left" Height="291" Margin="236,41,0,0" VerticalAlignment="Top" Width="500" Background="#FFB8DFFF"/>
+                    <DataGrid x:Name="gridstats" HorizontalAlignment="Left" Height="291" Margin="215,33,0,0" VerticalAlignment="Top" Width="500" Background="#FFB8DFFF"/>
                     <Button Content="" HorizontalAlignment="Left" Margin="153,33,0,0" VerticalAlignment="Top" Width="34" Height="56" BorderBrush="{x:Null}" RenderTransformOrigin="-0.794,0.491">
                         <Button.Background>
                             <ImageBrush ImageSource="image/pcunit_102232.ico"/>
@@ -113,7 +122,7 @@
                     </Button>
                     <Button Content="" 
                         HorizontalAlignment="Left" 
-                        Margin="748,10,0,0"
+                        Margin="736,10,0,0"
                         VerticalAlignment="Top" Width="38" 
                         Click="Exit_Click" FontSize="16" FontFamily="Unispace" BorderBrush="{x:Null}">
                         <Button.Background>
@@ -122,7 +131,10 @@
                     </Button>
 
 
+
                 </Grid>
+
+
             </TabItem>
         </TabControl>
     </Grid>

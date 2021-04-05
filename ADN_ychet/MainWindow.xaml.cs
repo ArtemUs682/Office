@@ -46,7 +46,7 @@ namespace ADN_ychet
 
             DoubleAnimation animList = new DoubleAnimation();
             animList.From = 0;
-            animList.To = 500;
+            animList.To = 520;
             animList.Duration = TimeSpan.FromSeconds(1);
             list1.BeginAnimation(ListBox.WidthProperty, animList);
 
