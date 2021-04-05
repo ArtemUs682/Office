@@ -40,9 +40,9 @@
                     <Image x:Name="addImag" HorizontalAlignment="Left" Height="28" Margin="16,81,0,0" VerticalAlignment="Top" Width="30" Source="image/add_plus_insert_icon_160937.ico"/>
                     <Image x:Name="DelImag" HorizontalAlignment="Left" Height="34" Margin="16,126,0,0" VerticalAlignment="Top" Width="30" Source="image/seo-social-web-network-internet_262_icon-icons.com_61518.ico"  Stretch="Fill"/>
                     <ListBox HorizontalAlignment="Left" x:Name="list1" Height="340" Margin="240,0,0,0" VerticalAlignment="Center" Width="500">
-                        <DataGrid HorizontalAlignment="Left" Height="320" VerticalAlignment="Center" Width="450" Background="#FFF8FFCF" />
-                        <DataGrid HorizontalAlignment="Left" Height="320" VerticalAlignment="Center" Width="450" Background="#FFD3FFCF" />
-                        <DataGrid HorizontalAlignment="Left" Height="320" VerticalAlignment="Center" Width="450" Background="#FFCFF6FF" />
+                        <DataGrid Name ="EquipDatagrid"  HorizontalAlignment="Left" Height="320" VerticalAlignment="Center" Width="450" Background="#FFF8FFCF" />
+                        <DataGrid Name ="UnitsDatagrid" HorizontalAlignment="Left" Height="320" VerticalAlignment="Center" Width="450" Background="#FFD3FFCF" />
+                        <DataGrid Name ="RoomsDatagrid" HorizontalAlignment="Left" Height="320" VerticalAlignment="Center" Width="450" Background="#FFCFF6FF" />
                     </ListBox>
 
 

@@ -56,8 +56,26 @@ namespace ADN_ychet
             animList.Duration = TimeSpan.FromSeconds(1);
             // gridstats.BeginAnimation(ListBox.WidthProperty, animGrid);
 
+            con.Open();
+            string sql = "SELECT Id AS Идентифекатор, Name AS Наименование, \"Limit\" AS 'Срок службы (мес.)' FROM Equipment WHERE Deleted = 0;";
+            SQLiteDataAdapter adapter = new SQLiteDataAdapter(sql, con);
+            DataTable dataTable = new DataTable();
+            adapter.Fill(dataTable);
+            EquipDatagrid.ItemsSource = dataTable.DefaultView;
 
-           
+            sql = "SELECT Units.Id AS Идентифекатор, Equipment.Name AS Наименование, Comissioned AS 'Дата приёма', \"Number\" AS 'Кабинет' FROM (Units INNER JOIN Equipment ON Units.EquipmentId = EquipmentId) INNER JOIN Rooms ON Units.RoomId = Rooms.Id WHERE Units.Deleted = 0";
+            adapter = new SQLiteDataAdapter(sql, con);
+            dataTable = new DataTable();
+            adapter.Fill(dataTable);
+            UnitsDatagrid.ItemsSource = dataTable.DefaultView;
+
+            sql = "SELECT Id AS Идентифекатор, Number AS Номер FROM Rooms WHERE Deleted = 0";
+            adapter = new SQLiteDataAdapter(sql, con);
+            dataTable = new DataTable();
+            adapter.Fill(dataTable);
+            RoomsDatagrid.ItemsSource = dataTable.DefaultView;
+            con.Close();
+
         }
 
         private void Exit_Click(object sender, RoutedEventArgs e)
