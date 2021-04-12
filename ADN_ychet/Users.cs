@@ -10,7 +10,7 @@ namespace ADN_ychet
     {
         public int Id { get; set; }
 
-        private string login, password;
+        public string login, password;
 
         public string Login
         {

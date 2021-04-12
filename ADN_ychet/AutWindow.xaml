@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ADN_ychet"
-        WindowStyle="None" ResizeMode="NoResize"
+        WindowStyle="None" 
         mc:Ignorable="d"
         Title="AutWindow" Height="500" Width="400" WindowStartupLocation="CenterScreen">
     <Grid Height="500" VerticalAlignment="Top" Margin="0,0,2,0" >
@@ -23,13 +23,13 @@
                 </TransformGroup>
             </MediaElement.RenderTransform>
         </MediaElement>
-        <Button Content="Войти" HorizontalAlignment="Left" Margin="150,331,0,137" VerticalAlignment="Center" Width="80" Click="aut_click"  />
-        <TextBox HorizontalAlignment="Left" Height="24" Margin="150,211,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160"/>
-        <Image HorizontalAlignment="Left" Height="70" Margin="62,218,0,0" VerticalAlignment="Top" Width="68" Source="image/man_user_icon_160878.ico"/>
-        <Label Content="логин" HorizontalAlignment="Left" Margin="150,194,0,0" VerticalAlignment="Top" Height="24" RenderTransformOrigin="1.071,0.542" Width="40"/>
-        <Label Content="пароль" HorizontalAlignment="Left" Margin="150,271,0,0" VerticalAlignment="Top" Height="24" RenderTransformOrigin="1.071,0.542" Width="47"/>
-        <PasswordBox HorizontalAlignment="Left" Margin="150,288,0,0" VerticalAlignment="Top" Width="160" Height="24"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="358,10,0,0" VerticalAlignment="Top" Width="30" BorderBrush="{x:Null}" Foreground="{x:Null}" RenderTransformOrigin="0.533,0.344" Click="X_Click">
+        <Button Content="Войти" HorizontalAlignment="Left" Margin="150,338,0,130" VerticalAlignment="Center" Width="80" Click="aut_click"  />
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="150,185,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160"/>
+        <Image HorizontalAlignment="Left" Height="70" Margin="77,172,0,0" VerticalAlignment="Top" Width="68" Source="image/man_user_icon_160878.ico"/>
+        <Label Content="логин" HorizontalAlignment="Left" Margin="150,161,0,0" VerticalAlignment="Top" Height="24" RenderTransformOrigin="1.071,0.542" Width="40"/>
+        <Label Content="пароль" HorizontalAlignment="Left" Margin="150,218,0,0" VerticalAlignment="Top" Height="24" RenderTransformOrigin="1.071,0.542" Width="47"/>
+        <PasswordBox HorizontalAlignment="Left" Margin="150,242,0,0" VerticalAlignment="Top" Width="160" Height="24"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="358,10,0,0" VerticalAlignment="Top" Width="30" BorderBrush="{x:Null}" Foreground="{x:Null}" RenderTransformOrigin="-0.017,0.453" Click="X_Click">
             <Button.Background>
                 <ImageBrush ImageSource="image/cross_icon_160913.ico"/>
             </Button.Background>
@@ -46,5 +46,6 @@
                 </TransformGroup>
             </MediaElement.RenderTransform>
         </MediaElement>
+        <Button Content="Регистрация" HorizontalAlignment="Left" Margin="150,285,0,0" VerticalAlignment="Top" Width="124" RenderTransformOrigin="0.766,1.031" Click="RegButton"/>
     </Grid>
 </Window>

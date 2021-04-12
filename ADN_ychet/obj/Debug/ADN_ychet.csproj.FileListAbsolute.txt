@@ -156,3 +156,6 @@ D:\Учёт\gid\Office\ADN_ychet\obj\Debug\ADN_ychet.csproj.GenerateResource.cac
 D:\Учёт\gid\Office\ADN_ychet\obj\Debug\ADN_ychet.csproj.CopyComplete
 D:\Учёт\gid\Office\ADN_ychet\obj\Debug\ADN_ychet.exe
 D:\Учёт\gid\Office\ADN_ychet\obj\Debug\ADN_ychet.pdb
+D:\Учёт\gid\Office\ADN_ychet\obj\Debug\ADN_ychet.csprojAssemblyReference.cache
+D:\Учёт\gid\Office\ADN_ychet\obj\Debug\reg.g.cs
+D:\Учёт\gid\Office\ADN_ychet\obj\Debug\reg.baml
