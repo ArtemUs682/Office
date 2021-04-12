@@ -24,11 +24,26 @@ namespace ADN_ychet
             InitializeComponent();
         }
 
+        private void gif_MediaEnded(object sender, RoutedEventArgs e)
+        {
+            aurup.Position = new TimeSpan(0, 0, 1);
+            aurup.Play();
+            autdown.Position = new TimeSpan(0,0,1);
+            autdown.Play();
+        }
+       
+
+        private void aut_click(object sender, RoutedEventArgs e)
+        {
+            MainWindow autWindow = new MainWindow();
+            this.Close();
+            autWindow.Show();
+        }
+
+
         private void X_Click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
         }
-
-        
     }
 }
