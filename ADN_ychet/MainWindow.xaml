@@ -6,11 +6,11 @@
         xmlns:local="clr-namespace:ADN_ychet"
         mc:Ignorable="d"
             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-     Title="MainWindow" Height="450" Width="800">
+     Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize" WindowStyle="None" WindowStartupLocation="CenterScreen">
 
 
     <!--Title="MainWindow" Height="450" Width="800"  WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None"-->
-    
+
 
 
     <Grid>
@@ -22,28 +22,81 @@
 
                     <MediaElement x:Name="gif" MediaEnded="gif_MediaEnded" UnloadedBehavior="Manual" LoadedBehavior="Play" Stretch="Fill"
                      HorizontalAlignment="Left" Height="450" VerticalAlignment="Center" Width="846" 
-                     Source="image/B.mp4" Margin="0,0,0,0" Balance="-2"/>
+                     Source="D:\Учёт\gid\Office\ADN_ychet\image\B.mp4" Margin="0,0,0,0" Balance="-2"/>
 
                     <Button Content="" 
                             HorizontalAlignment="Left" 
-                            Margin="745,10,0,0"
+                            Margin="768,0,0,0"
                             VerticalAlignment="Top" Width="38" 
                             Click="Exit_Click" FontSize="16" FontFamily="Unispace" BorderBrush="{x:Null}">
                         <Button.Background>
                             <ImageBrush ImageSource="image/cross_icon_160913.ico" Stretch="Uniform"/>
                         </Button.Background>
                     </Button>
-                    <Button Content="Добавить" x:Name="AddBut" HorizontalAlignment="Left" Margin="55,81,0,0" VerticalAlignment="Top" Width="133"  Height="28" Click="AddBut_Click"/>
-                    <Button Content="Редактировать" x:Name="RedBut" HorizontalAlignment="Left" Margin="55,180,0,0" VerticalAlignment="Top" Width="133" Height="28"/>
-                    <Button Content="Удалить" x:Name="DelBut" HorizontalAlignment="Left" Margin="55,132,0,0" VerticalAlignment="Top" Width="133" Height="28"/>
-                    <Image x:Name="RedImag" HorizontalAlignment="Left" Height="28" Margin="16,180,0,0" VerticalAlignment="Top" Width="30" Source="image/edit_icon_160910.ico" />
-                    <Image x:Name="addImag" HorizontalAlignment="Left" Height="28" Margin="16,81,0,0" VerticalAlignment="Top" Width="30" Source="image/add_plus_insert_icon_160937.ico"/>
-                    <Image x:Name="DelImag" HorizontalAlignment="Left" Height="34" Margin="16,126,0,0" VerticalAlignment="Top" Width="30" Source="image/seo-social-web-network-internet_262_icon-icons.com_61518.ico"  Stretch="Fill"/>
-                    <ListBox HorizontalAlignment="Left" x:Name="list1" Height="340" Margin="240,0,0,0" VerticalAlignment="Center" Width="500">
-                        <DataGrid Name ="EquipDatagrid"  HorizontalAlignment="Left" Height="320" VerticalAlignment="Center" Width="450" Background="#FFF8FFCF" />
-                        <DataGrid Name ="UnitsDatagrid" HorizontalAlignment="Left" Height="320" VerticalAlignment="Center" Width="450" Background="#FFD3FFCF" />
-                        <DataGrid Name ="RoomsDatagrid" HorizontalAlignment="Left" Height="320" VerticalAlignment="Center" Width="450" Background="#FFCFF6FF" />
-                    </ListBox>
+                    <!--<ListBox HorizontalAlignment="Left" x:Name="list1" Height="340" Margin="240,0,0,0" VerticalAlignment="Center" Width="500">
+                        <DataGrid HorizontalAlignment="Left" Height="320" VerticalAlignment="Center" Width="450" Background="#FFF8FFCF" />
+                        <DataGrid HorizontalAlignment="Left" Height="320" VerticalAlignment="Center" Width="450" Background="#FFD3FFCF" />
+                        <DataGrid HorizontalAlignment="Left" Height="320" VerticalAlignment="Center" Width="450" Background="#FFCFF6FF" />
+                    </ListBox>-->
+
+                    <ScrollViewer x:Name="list1" HorizontalAlignment="Left" Height="327" Margin="34,0,0,0" VerticalAlignment="Top" Width="729">
+                        <Grid Height="974" Width="772">
+                            <DataGrid Height="285" Margin="223,10,65,0" VerticalAlignment="Top" Background="#FFC1FCFF"/>
+                            <DataGrid HorizontalAlignment="Left" Height="300" Margin="223,660,0,0" VerticalAlignment="Top" Width="484"  Background="#FFB4CFFD"/>
+                            <DataGrid HorizontalAlignment="Left" Height="300" Margin="223,330,0,0" VerticalAlignment="Top" Width="484" Background="#FF9AFDF0"/>
+                            <DataGrid HorizontalAlignment="Left" Height="300" Margin="223,330,0,0" VerticalAlignment="Top" Width="484" Background="#FF9AFDF0"/>
+                            <Button Content="Добавить" x:Name="AddBut_Eq" HorizontalAlignment="Left" Margin="0,17,0,0" VerticalAlignment="Top" Width="133"  Height="28" Click="AddBut_Click"/>
+                            <Button Content="Редактировать" x:Name="RedBut_Eq" HorizontalAlignment="Left" Margin="0,116,0,0" VerticalAlignment="Top" Width="133" Height="28"/>
+                            <Button Content="Удалить" x:Name="DelBut_Eq" HorizontalAlignment="Left" Margin="0,68,0,0" VerticalAlignment="Top" Width="133" Height="28"/>
+                            <Image x:Name="RedImag" HorizontalAlignment="Left" Height="28" Margin="153,116,0,0" VerticalAlignment="Top" Width="30" Source="image/edit_icon_160910.ico" />
+                            <Image x:Name="addImag" HorizontalAlignment="Left" Height="28" Margin="153,17,0,0" VerticalAlignment="Top" Width="30" Source="image/add_plus_insert_icon_160937.ico"/>
+                            <Image x:Name="DelImag" HorizontalAlignment="Left" Height="34" Margin="153,62,0,0" VerticalAlignment="Top" Width="30" Source="image/seo-social-web-network-internet_262_icon-icons.com_61518.ico"  Stretch="Fill"/>
+                            <TextBox x:Name="Id_Eq" HorizontalAlignment="Left" Height="23" Margin="0,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" Background="White"/>
+                            <TextBox x:Name="Name_Eq" HorizontalAlignment="Left" Height="23" Margin="0,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" Background="White"/>
+                            <TextBox x:Name="Limit_Eq" HorizontalAlignment="Left" Height="23" Margin="0,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" Background="White"/>
+                            <Label Content="Name" HorizontalAlignment="Left" Margin="148,196,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.833,0.625"/>
+                            <Label Content="Limit" HorizontalAlignment="Left" Margin="151,225,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.833,0.625"/>
+                            <Label Content="Id" HorizontalAlignment="Left" Margin="153,168,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.833,0.625"/>
+                            <Button Content="Добавить" x:Name="AddBut_Copy1" HorizontalAlignment="Left" Margin="0,338,0,0" VerticalAlignment="Top" Width="133"  Height="28" Click="AddBut_Click"/>
+                            <Button Content="Редактировать" x:Name="RedBut_Copy1" HorizontalAlignment="Left" Margin="0,437,0,0" VerticalAlignment="Top" Width="133" Height="28"/>
+                            <Button Content="Удалить" x:Name="DelBut_Copy1" HorizontalAlignment="Left" Margin="0,389,0,0" VerticalAlignment="Top" Width="133" Height="28"/>
+                            <Image x:Name="RedImag_Copy1" HorizontalAlignment="Left" Height="28" Margin="153,437,0,0" VerticalAlignment="Top" Width="30" Source="image/edit_icon_160910.ico" />
+                            <Image x:Name="addImag_Copy1" HorizontalAlignment="Left" Height="28" Margin="153,338,0,0" VerticalAlignment="Top" Width="30" Source="image/add_plus_insert_icon_160937.ico"/>
+                            <Image x:Name="DelImag_Copy1" HorizontalAlignment="Left" Height="34" Margin="153,383,0,0" VerticalAlignment="Top" Width="30" Source="image/seo-social-web-network-internet_262_icon-icons.com_61518.ico"  Stretch="Fill"/>
+                            <TextBox x:Name="Id_Room" HorizontalAlignment="Left" Height="23" Margin="0,489,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" Background="White"/>
+                            <TextBox x:Name="Number_Rooms" HorizontalAlignment="Left" Height="23" Margin="0,517,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" Background="White"/>
+                            <Label Content="Number" HorizontalAlignment="Left" Margin="148,517,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.833,0.625"/>
+                            <Label Content="Id" HorizontalAlignment="Left" Margin="153,489,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.833,0.625"/>
+                            <Button Content="Добавить" x:Name="Add_Rooms" HorizontalAlignment="Left" Margin="0,660,0,-333" VerticalAlignment="Top" Width="133"  Height="28" Click="AddBut_Click"/>
+                            <Button Content="Редактировать" x:Name="Red_Room" HorizontalAlignment="Left" Margin="0,710,0,-432" VerticalAlignment="Top" Width="133" Height="28"/>
+                            <Button Content="Удалить" x:Name="Del_Room" HorizontalAlignment="Left" Margin="0,760,0,-384" VerticalAlignment="Top" Width="133" Height="28"/>
+                            <Image x:Name="RedImag_Copy" HorizontalAlignment="Left" Height="28" Margin="153,660,0,-432" VerticalAlignment="Top" Width="30" Source="image/edit_icon_160910.ico" />
+                            <Image x:Name="addImag_Copy" HorizontalAlignment="Left" Height="28" Margin="153,710,0,-333" VerticalAlignment="Top" Width="30" Source="image/add_plus_insert_icon_160937.ico"/>
+                            <Image x:Name="DelImag_Copy" HorizontalAlignment="Left" Height="34" Margin="153,760,0,-384" VerticalAlignment="Top" Width="30" Source="image/seo-social-web-network-internet_262_icon-icons.com_61518.ico"  Stretch="Fill"/>
+                            <TextBox x:Name="Id_Unit" HorizontalAlignment="Left" Height="23" Margin="0,810,0,-479" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" Background="White"/>
+                            <TextBox x:Name="EqID_Unit" HorizontalAlignment="Left" Height="23" Margin="0,840,0,-507" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" Background="White"/>
+                            <TextBox x:Name="Commisioned_Unit" HorizontalAlignment="Left" Height="23" Margin="0,870,0,-535" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" Background="White"/>
+                            <TextBox x:Name="RoomID_Unit" HorizontalAlignment="Left" Height="23" Margin="0,900,0,-535" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" Background="White"/>
+                            <Label Content="Id" HorizontalAlignment="Left" Margin="148,815,0,-508" VerticalAlignment="Top" RenderTransformOrigin="0.833,0.625"/>
+                            <Label Content="Equipment Id" HorizontalAlignment="Left" Margin="146,845,0,-537" VerticalAlignment="Top" RenderTransformOrigin="0.833,0.625"/>
+                            <Label Content="Commisioned" HorizontalAlignment="Left" Margin="146,875,0,-480" VerticalAlignment="Top" RenderTransformOrigin="0.833,0.625"/>
+                            <Label Content="Room Id" HorizontalAlignment="Left" Margin="146,905,0,-480" VerticalAlignment="Top" RenderTransformOrigin="0.833,0.625"/>
+                        </Grid>
+
+                    </ScrollViewer>
+                    <Button Content="Добавить" x:Name="AddBut_Copy3" HorizontalAlignment="Left" Margin="34,433,0,-32" VerticalAlignment="Top" Width="133"  Height="28" Click="AddBut_Click"/>
+                    <Button Content="Редактировать" x:Name="RedBut_Copy3" HorizontalAlignment="Left" Margin="34,532,0,-131" VerticalAlignment="Top" Width="133" Height="28"/>
+                    <Button Content="Удалить" x:Name="DelBut_Copy3" HorizontalAlignment="Left" Margin="34,484,0,-83" VerticalAlignment="Top" Width="133" Height="28"/>
+                    <Image x:Name="RedImag_Copy3" HorizontalAlignment="Left" Height="28" Margin="187,532,0,-131" VerticalAlignment="Top" Width="30" Source="image/edit_icon_160910.ico" />
+                    <Image x:Name="addImag_Copy3" HorizontalAlignment="Left" Height="28" Margin="187,433,0,-32" VerticalAlignment="Top" Width="30" Source="image/add_plus_insert_icon_160937.ico"/>
+                    <Image x:Name="DelImag_Copy3" HorizontalAlignment="Left" Height="34" Margin="187,478,0,-83" VerticalAlignment="Top" Width="30" Source="image/seo-social-web-network-internet_262_icon-icons.com_61518.ico"  Stretch="Fill"/>
+                    <TextBox x:Name="Id_Eq_Copy3" HorizontalAlignment="Left" Height="23" Margin="34,584,0,-178" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" Background="White"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="34,628,0,-222" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" Background="White"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="34,656,0,-250" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" Background="White"/>
+                    <Label Content="Name" HorizontalAlignment="Left" Margin="182,628,0,-223" VerticalAlignment="Top" RenderTransformOrigin="0.833,0.625"/>
+                    <Label Content="Limit" HorizontalAlignment="Left" Margin="185,657,0,-252" VerticalAlignment="Top" RenderTransformOrigin="0.833,0.625"/>
+                    <Label Content="Id" HorizontalAlignment="Left" Margin="187,584,0,-179" VerticalAlignment="Top" RenderTransformOrigin="0.833,0.625"/>
+                   
 
 
                 </Grid>
@@ -60,12 +113,12 @@
                         </EventTrigger.Actions>
                     </EventTrigger>
                 </TabItem.Triggers>
-            
+
                 <Grid Margin="0,-2,0,-5" Height="429" VerticalAlignment="Bottom">
 
                     <MediaElement x:Name="gif2" MediaEnded="gif_MediaEnded" UnloadedBehavior="Manual" LoadedBehavior="Play" Stretch="Fill"
-                     HorizontalAlignment="Left" Height="450" VerticalAlignment="Center" Width="868" 
-                     Source="D:\Учёт\ADN_ychet\ADN_ychet\image\Blue - 9809.mp4" Margin="-22,0,-52,-21"/>
+                     HorizontalAlignment="Left" Height="450" VerticalAlignment="Center" Width="816" 
+                     Source="D:\Учёт\ADN_ychet\ADN_ychet\image\Blue - 9809.mp4" Margin="-22,0,0,-21"/>
 
                     <Button Content="" HorizontalAlignment="Left" Margin="29,229,0,0" VerticalAlignment="Top" Width="70" Height="64" RenderTransformOrigin="0.571,-0.879" BorderBrush="{x:Null}">
                         <Button.Background>
@@ -90,7 +143,7 @@
                             <ImageBrush/>
                         </Button.BorderBrush>
                     </Button>
-                    <DataGrid x:Name="gridstats" HorizontalAlignment="Left" Height="291" Margin="236,41,0,0" VerticalAlignment="Top" Width="500" Background="#FFB8DFFF"/>
+                    <DataGrid x:Name="gridstats" HorizontalAlignment="Left" Height="291" Margin="215,33,0,0" VerticalAlignment="Top" Width="500" Background="#FFB8DFFF"/>
                     <Button Content="" HorizontalAlignment="Left" Margin="153,33,0,0" VerticalAlignment="Top" Width="34" Height="56" BorderBrush="{x:Null}" RenderTransformOrigin="-0.794,0.491">
                         <Button.Background>
                             <ImageBrush ImageSource="image/pcunit_102232.ico"/>
@@ -113,7 +166,7 @@
                     </Button>
                     <Button Content="" 
                         HorizontalAlignment="Left" 
-                        Margin="748,10,0,0"
+                        Margin="736,10,0,0"
                         VerticalAlignment="Top" Width="38" 
                         Click="Exit_Click" FontSize="16" FontFamily="Unispace" BorderBrush="{x:Null}">
                         <Button.Background>
@@ -122,7 +175,10 @@
                     </Button>
 
 
+
                 </Grid>
+
+
             </TabItem>
         </TabControl>
     </Grid>

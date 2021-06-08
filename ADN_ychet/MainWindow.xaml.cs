@@ -28,71 +28,11 @@ namespace ADN_ychet
         public MainWindow()
         {
             InitializeComponent();
-            DoubleAnimation animAddBut = new DoubleAnimation();
-            animAddBut.From = 0;
-            animAddBut.To = 133;
-            animAddBut.Duration = TimeSpan.FromSeconds(1);
-            AddBut.BeginAnimation(Button.WidthProperty,animAddBut);
-            DelBut.BeginAnimation(Button.WidthProperty, animAddBut);
-            RedBut.BeginAnimation(Button.WidthProperty, animAddBut);
-
-            DoubleAnimation animAddImag = new DoubleAnimation();
-            animAddImag.From = 0;
-            animAddImag.To = 30;
-            animAddImag.Duration = TimeSpan.FromSeconds(1);
-            addImag.BeginAnimation(Button.WidthProperty, animAddImag);
-            DelImag.BeginAnimation(Button.WidthProperty, animAddImag);
-            RedImag.BeginAnimation(Button.WidthProperty, animAddImag);
-
-            DoubleAnimation animList = new DoubleAnimation();
-            animList.From = 0;
-            animList.To = 500;
-            animList.Duration = TimeSpan.FromSeconds(1);
-            list1.BeginAnimation(ListBox.WidthProperty, animList);
-
-            DoubleAnimation animGrid = new DoubleAnimation();
-            animList.From = 0;
-            animList.To = 500;
-            animList.Duration = TimeSpan.FromSeconds(1);
-            // gridstats.BeginAnimation(ListBox.WidthProperty, animGrid);
-
-            con.Open();
-            string sql = "SELECT Id AS Идентифекатор, Name AS Наименование, \"Limit\" AS 'Срок службы (мес.)' FROM Equipment WHERE Deleted = 0;";
-            SQLiteDataAdapter adapter = new SQLiteDataAdapter(sql, con);
-            DataTable dataTable = new DataTable();
-            adapter.Fill(dataTable);
-            EquipDatagrid.ItemsSource = dataTable.DefaultView;
-
-            sql = "SELECT Units.Id AS Идентифекатор, Equipment.Name AS Наименование, Comissioned AS 'Дата приёма', \"Number\" AS 'Кабинет' FROM (Units INNER JOIN Equipment ON Units.EquipmentId = EquipmentId) INNER JOIN Rooms ON Units.RoomId = Rooms.Id WHERE Units.Deleted = 0";
-            adapter = new SQLiteDataAdapter(sql, con);
-            dataTable = new DataTable();
-            adapter.Fill(dataTable);
-            UnitsDatagrid.ItemsSource = dataTable.DefaultView;
-
-            sql = "SELECT Id AS Идентифекатор, Number AS Номер FROM Rooms WHERE Deleted = 0";
-            adapter = new SQLiteDataAdapter(sql, con);
-            dataTable = new DataTable();
-            adapter.Fill(dataTable);
-            RoomsDatagrid.ItemsSource = dataTable.DefaultView;
-            con.Close();
-
         }
 
         private void Exit_Click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
-        }
-
-        private void gif_MediaEnded(object sender, RoutedEventArgs e)
-        {
-            gif.Position = new TimeSpan(0, 0, 1);
-            gif.Play();
-        }
-
-        private void gif2_MediaEnded(object sender, RoutedEventArgs e)
-        {
-            gif.Position = new TimeSpan(0, 0, 1);
-            gif.Play();
         }
 
         private void AddBut_Click(object sender, RoutedEventArgs e)
