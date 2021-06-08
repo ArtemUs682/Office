@@ -20,10 +20,6 @@
                 <Grid Margin="-11,-2,-2,-5" RenderTransformOrigin="0.501,0.507">
 
 
-                    <MediaElement x:Name="gif" MediaEnded="gif_MediaEnded" UnloadedBehavior="Manual" LoadedBehavior="Play" Stretch="Fill"
-                     HorizontalAlignment="Left" Height="450" VerticalAlignment="Center" Width="846" 
-                     Source="D:\Учёт\gid\Office\ADN_ychet\image\B.mp4" Margin="0,0,0,0" Balance="-2"/>
-
                     <Button Content="" 
                             HorizontalAlignment="Left" 
                             Margin="768,0,0,0"
@@ -46,8 +42,8 @@
                             <DataGrid HorizontalAlignment="Left" Height="300" Margin="223,330,0,0" VerticalAlignment="Top" Width="484" Background="#FF9AFDF0"/>
                             <DataGrid HorizontalAlignment="Left" Height="300" Margin="223,330,0,0" VerticalAlignment="Top" Width="484" Background="#FF9AFDF0"/>
                             <Button Content="Добавить" x:Name="AddBut_Eq" HorizontalAlignment="Left" Margin="0,17,0,0" VerticalAlignment="Top" Width="133"  Height="28" Click="AddBut_Click"/>
-                            <Button Content="Редактировать" x:Name="RedBut_Eq" HorizontalAlignment="Left" Margin="0,116,0,0" VerticalAlignment="Top" Width="133" Height="28"/>
-                            <Button Content="Удалить" x:Name="DelBut_Eq" HorizontalAlignment="Left" Margin="0,68,0,0" VerticalAlignment="Top" Width="133" Height="28"/>
+                            <Button Content="Редактировать" x:Name="RedBut_Eq" HorizontalAlignment="Left" Margin="0,116,0,0" VerticalAlignment="Top" Width="133" Height="28" Click="RedBut_Eq_Click"/>
+                            <Button Content="Удалить" x:Name="DelBut_Eq" HorizontalAlignment="Left" Margin="0,68,0,0" VerticalAlignment="Top" Width="133" Height="28" Click="DelBut_Eq_Click"/>
                             <Image x:Name="RedImag" HorizontalAlignment="Left" Height="28" Margin="153,116,0,0" VerticalAlignment="Top" Width="30" Source="image/edit_icon_160910.ico" />
                             <Image x:Name="addImag" HorizontalAlignment="Left" Height="28" Margin="153,17,0,0" VerticalAlignment="Top" Width="30" Source="image/add_plus_insert_icon_160937.ico"/>
                             <Image x:Name="DelImag" HorizontalAlignment="Left" Height="34" Margin="153,62,0,0" VerticalAlignment="Top" Width="30" Source="image/seo-social-web-network-internet_262_icon-icons.com_61518.ico"  Stretch="Fill"/>
@@ -57,9 +53,9 @@
                             <Label Content="Name" HorizontalAlignment="Left" Margin="148,196,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.833,0.625"/>
                             <Label Content="Limit" HorizontalAlignment="Left" Margin="151,225,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.833,0.625"/>
                             <Label Content="Id" HorizontalAlignment="Left" Margin="153,168,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.833,0.625"/>
-                            <Button Content="Добавить" x:Name="AddBut_Copy1" HorizontalAlignment="Left" Margin="0,338,0,0" VerticalAlignment="Top" Width="133"  Height="28" Click="AddBut_Click"/>
-                            <Button Content="Редактировать" x:Name="RedBut_Copy1" HorizontalAlignment="Left" Margin="0,437,0,0" VerticalAlignment="Top" Width="133" Height="28"/>
-                            <Button Content="Удалить" x:Name="DelBut_Copy1" HorizontalAlignment="Left" Margin="0,389,0,0" VerticalAlignment="Top" Width="133" Height="28"/>
+                            <Button Content="Добавить" x:Name="Add_Room" HorizontalAlignment="Left" Margin="0,338,0,0" VerticalAlignment="Top" Width="133"  Height="28" Click="Add_Room_Click"/>
+                            <Button Content="Редактировать" x:Name="RedBut_Room" HorizontalAlignment="Left" Margin="0,437,0,0" VerticalAlignment="Top" Width="133" Height="28" Click="RedBut_Room_Click"/>
+                            <Button Content="Удалить" x:Name="DelBut_Room" HorizontalAlignment="Left" Margin="0,389,0,0" VerticalAlignment="Top" Width="133" Height="28" Click="DelBut_Room_Click"/>
                             <Image x:Name="RedImag_Copy1" HorizontalAlignment="Left" Height="28" Margin="153,437,0,0" VerticalAlignment="Top" Width="30" Source="image/edit_icon_160910.ico" />
                             <Image x:Name="addImag_Copy1" HorizontalAlignment="Left" Height="28" Margin="153,338,0,0" VerticalAlignment="Top" Width="30" Source="image/add_plus_insert_icon_160937.ico"/>
                             <Image x:Name="DelImag_Copy1" HorizontalAlignment="Left" Height="34" Margin="153,383,0,0" VerticalAlignment="Top" Width="30" Source="image/seo-social-web-network-internet_262_icon-icons.com_61518.ico"  Stretch="Fill"/>
@@ -67,9 +63,9 @@
                             <TextBox x:Name="Number_Rooms" HorizontalAlignment="Left" Height="23" Margin="0,517,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" Background="White"/>
                             <Label Content="Number" HorizontalAlignment="Left" Margin="148,517,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.833,0.625"/>
                             <Label Content="Id" HorizontalAlignment="Left" Margin="153,489,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.833,0.625"/>
-                            <Button Content="Добавить" x:Name="Add_Rooms" HorizontalAlignment="Left" Margin="0,660,0,-333" VerticalAlignment="Top" Width="133"  Height="28" Click="AddBut_Click"/>
-                            <Button Content="Редактировать" x:Name="Red_Room" HorizontalAlignment="Left" Margin="0,710,0,-432" VerticalAlignment="Top" Width="133" Height="28"/>
-                            <Button Content="Удалить" x:Name="Del_Room" HorizontalAlignment="Left" Margin="0,760,0,-384" VerticalAlignment="Top" Width="133" Height="28"/>
+                            <Button Content="Добавить" x:Name="Add_Unit" HorizontalAlignment="Left" Margin="0,660,0,-333" VerticalAlignment="Top" Width="133"  Height="28" Click="Add_Unit_Click"/>
+                            <Button Content="Редактировать" x:Name="Red_Unit" HorizontalAlignment="Left" Margin="0,710,0,-432" VerticalAlignment="Top" Width="133" Height="28" Click="Red_Unit_Click"/>
+                            <Button Content="Удалить" x:Name="Del_Unit" HorizontalAlignment="Left" Margin="0,760,0,-384" VerticalAlignment="Top" Width="133" Height="28" Click="Del_Unit_Click" />
                             <Image x:Name="RedImag_Copy" HorizontalAlignment="Left" Height="28" Margin="153,660,0,-432" VerticalAlignment="Top" Width="30" Source="image/edit_icon_160910.ico" />
                             <Image x:Name="addImag_Copy" HorizontalAlignment="Left" Height="28" Margin="153,710,0,-333" VerticalAlignment="Top" Width="30" Source="image/add_plus_insert_icon_160937.ico"/>
                             <Image x:Name="DelImag_Copy" HorizontalAlignment="Left" Height="34" Margin="153,760,0,-384" VerticalAlignment="Top" Width="30" Source="image/seo-social-web-network-internet_262_icon-icons.com_61518.ico"  Stretch="Fill"/>
@@ -78,8 +74,8 @@
                             <TextBox x:Name="Commisioned_Unit" HorizontalAlignment="Left" Height="23" Margin="0,870,0,-535" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" Background="White"/>
                             <TextBox x:Name="RoomID_Unit" HorizontalAlignment="Left" Height="23" Margin="0,900,0,-535" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" Background="White"/>
                             <Label Content="Id" HorizontalAlignment="Left" Margin="148,815,0,-508" VerticalAlignment="Top" RenderTransformOrigin="0.833,0.625"/>
-                            <Label Content="Equipment Id" HorizontalAlignment="Left" Margin="146,845,0,-537" VerticalAlignment="Top" RenderTransformOrigin="0.833,0.625"/>
-                            <Label Content="Commisioned" HorizontalAlignment="Left" Margin="146,875,0,-480" VerticalAlignment="Top" RenderTransformOrigin="0.833,0.625"/>
+                            <Label Content="EquipmetId" HorizontalAlignment="Left" Margin="146,845,0,-537" VerticalAlignment="Top" RenderTransformOrigin="0.833,0.625"/>
+                            <Label Content="Comissioned" HorizontalAlignment="Left" Margin="146,875,0,-480" VerticalAlignment="Top" RenderTransformOrigin="0.833,0.625"/>
                             <Label Content="Room Id" HorizontalAlignment="Left" Margin="146,905,0,-480" VerticalAlignment="Top" RenderTransformOrigin="0.833,0.625"/>
                         </Grid>
 
@@ -96,7 +92,7 @@
                     <Label Content="Name" HorizontalAlignment="Left" Margin="182,628,0,-223" VerticalAlignment="Top" RenderTransformOrigin="0.833,0.625"/>
                     <Label Content="Limit" HorizontalAlignment="Left" Margin="185,657,0,-252" VerticalAlignment="Top" RenderTransformOrigin="0.833,0.625"/>
                     <Label Content="Id" HorizontalAlignment="Left" Margin="187,584,0,-179" VerticalAlignment="Top" RenderTransformOrigin="0.833,0.625"/>
-                   
+
 
 
                 </Grid>
@@ -115,27 +111,28 @@
                 </TabItem.Triggers>
 
                 <Grid Margin="0,-2,0,-5" Height="429" VerticalAlignment="Bottom">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="9*"/>
+                        <ColumnDefinition Width="388*"/>
+                    </Grid.ColumnDefinitions>
 
-                    <MediaElement x:Name="gif2" MediaEnded="gif_MediaEnded" UnloadedBehavior="Manual" LoadedBehavior="Play" Stretch="Fill"
-                     HorizontalAlignment="Left" Height="450" VerticalAlignment="Center" Width="816" 
-                     Source="D:\Учёт\ADN_ychet\ADN_ychet\image\Blue - 9809.mp4" Margin="-22,0,0,-21"/>
 
-                    <Button Content="" HorizontalAlignment="Left" Margin="29,229,0,0" VerticalAlignment="Top" Width="70" Height="64" RenderTransformOrigin="0.571,-0.879" BorderBrush="{x:Null}">
+                    <Button Content="" HorizontalAlignment="Left" Margin="11,229,0,0" VerticalAlignment="Top" Width="70" Height="64" RenderTransformOrigin="0.571,-0.879" BorderBrush="{x:Null}" Grid.Column="1">
                         <Button.Background>
                             <ImageBrush ImageSource="image/computermouse_78940.ico"/>
                         </Button.Background>
                     </Button>
-                    <Button Content="" HorizontalAlignment="Left" Margin="118,229,0,0" VerticalAlignment="Top" Width="79" Height="64" BorderBrush="{x:Null}">
+                    <Button Content="" HorizontalAlignment="Left" Margin="100,229,0,0" VerticalAlignment="Top" Width="79" Height="64" BorderBrush="{x:Null}" Grid.Column="1">
                         <Button.Background>
                             <ImageBrush ImageSource="image/desk-chair_96892.ico"/>
                         </Button.Background>
                     </Button>
-                    <Button Content="" HorizontalAlignment="Left" Margin="29,33,0,0" VerticalAlignment="Top" Width="74" BorderBrush="{x:Null}" Foreground="#DDFFFFFF" Height="56">
+                    <Button Content="" HorizontalAlignment="Left" Margin="11,33,0,0" VerticalAlignment="Top" Width="74" BorderBrush="{x:Null}" Foreground="#DDFFFFFF" Height="56" Grid.Column="1">
                         <Button.Background>
                             <ImageBrush ImageSource="image/comupter_desktop_mac_monitor_imac_display_screen_icon-icons.com_53482.ico"/>
                         </Button.Background>
                     </Button>
-                    <Button Content="" Margin="118,130,584,0" VerticalAlignment="Top" Height="54" RenderTransformOrigin="0.459,1.037">
+                    <Button Content="" Margin="100,130,584,0" VerticalAlignment="Top" Height="54" RenderTransformOrigin="0.459,1.037" Grid.Column="1">
                         <Button.Background>
                             <ImageBrush ImageSource="image/keyboard_78941.ico" Stretch="Uniform"/>
                         </Button.Background>
@@ -143,32 +140,32 @@
                             <ImageBrush/>
                         </Button.BorderBrush>
                     </Button>
-                    <DataGrid x:Name="gridstats" HorizontalAlignment="Left" Height="291" Margin="215,33,0,0" VerticalAlignment="Top" Width="500" Background="#FFB8DFFF"/>
-                    <Button Content="" HorizontalAlignment="Left" Margin="153,33,0,0" VerticalAlignment="Top" Width="34" Height="56" BorderBrush="{x:Null}" RenderTransformOrigin="-0.794,0.491">
+                    <DataGrid x:Name="gridstats" HorizontalAlignment="Left" Height="291" Margin="197,33,0,0" VerticalAlignment="Top" Width="500" Background="#FFB8DFFF" Grid.Column="1"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="135,33,0,0" VerticalAlignment="Top" Width="34" Height="56" BorderBrush="{x:Null}" RenderTransformOrigin="-0.794,0.491" Grid.Column="1">
                         <Button.Background>
                             <ImageBrush ImageSource="image/pcunit_102232.ico"/>
                         </Button.Background>
                     </Button>
-                    <Button Content="" HorizontalAlignment="Left" Margin="21,128,0,0" VerticalAlignment="Top" Width="82" BorderBrush="{x:Null}" Height="56">
+                    <Button Content="" HorizontalAlignment="Left" Margin="3,128,0,0" VerticalAlignment="Top" Width="82" BorderBrush="{x:Null}" Height="56" Grid.Column="1">
                         <Button.Background>
                             <ImageBrush ImageSource="image/table_desk_icon_150978.ico"/>
                         </Button.Background>
                     </Button>
-                    <Button Content="" HorizontalAlignment="Left" Margin="29,320,0,0" VerticalAlignment="Top" Width="53" BorderBrush="{x:Null}" Height="45">
+                    <Button Content="" HorizontalAlignment="Left" Margin="11,320,0,0" VerticalAlignment="Top" Width="53" BorderBrush="{x:Null}" Height="45" Grid.Column="1">
                         <Button.Background>
                             <ImageBrush ImageSource="image/printer_78936 (1).ico"/>
                         </Button.Background>
                     </Button>
-                    <Button Content="" HorizontalAlignment="Left" Margin="118,314,0,0" VerticalAlignment="Top" Width="69" Height="51" BorderBrush="{x:Null}">
+                    <Button Content="" HorizontalAlignment="Left" Margin="100,314,0,0" VerticalAlignment="Top" Width="69" Height="51" BorderBrush="{x:Null}" Grid.Column="1">
                         <Button.Background>
                             <ImageBrush ImageSource="image/projector-with-big-len_icon-icons.com_68147.ico"/>
                         </Button.Background>
                     </Button>
                     <Button Content="" 
                         HorizontalAlignment="Left" 
-                        Margin="736,10,0,0"
+                        Margin="718,10,0,0"
                         VerticalAlignment="Top" Width="38" 
-                        Click="Exit_Click" FontSize="16" FontFamily="Unispace" BorderBrush="{x:Null}">
+                        Click="Exit_Click" FontSize="16" FontFamily="Unispace" BorderBrush="{x:Null}" Grid.Column="1">
                         <Button.Background>
                             <ImageBrush ImageSource="image/cross_icon_160913.ico" Stretch="Uniform"/>
                         </Button.Background>
