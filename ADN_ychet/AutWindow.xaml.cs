@@ -38,17 +38,17 @@ namespace ADN_ychet
         {
             MessageBox.Show("Вы возможно успешно авторизовались!");
         }
-     
+
         private void gif_MediaEnded(object sender, RoutedEventArgs e)
         {
             aurup.Position = new TimeSpan(0, 0, 1);
             aurup.Play();
-            autdown.Position = new TimeSpan(0,0,1);
+            autdown.Position = new TimeSpan(0, 0, 1);
             autdown.Play();
         }
 
 
-       
+
 
         private void X_Click(object sender, RoutedEventArgs e)
         {
@@ -57,27 +57,25 @@ namespace ADN_ychet
 
         private void aut_click(object sender, RoutedEventArgs e)
         {
-            //if (string.IsNullOrEmpty(login) || string.IsNullOrEmpty(password))
-            //{
-            //    MessageBox.Show("Ошибочка! Не оставляйте поля пустыми!");
-            //}
-            //using (var db = new AppContext())
-            //{
-            //    var user = db.Users
-            //        .AsNoTracking()
-            //        .FirstOrDefault(u => u.Login == login && u.Password == password);
-
-            //    if (user == null)
-            //    {
-            //        MessageBox.Show("Ошибка! Пользователь с такими данными не найден.");
-            //    }
-            //    MessageBox.Show("Вы успешно авторизовались!");
-
-                MainWindow autWindow = new MainWindow();
-                this.Close();
-                autWindow.Show();
-            //    return true;
-            //}
+            if (string.IsNullOrEmpty(login.Text) || string.IsNullOrEmpty(password.Password))
+            {
+                MessageBox.Show("Ошибочка! Не оставляйте поля пустыми!");
+            }
+            using (var db = new AppContext())
+            {
+                var user = db.Users.Where(u => u.Login == login.Text && u.Password == password.Password).FirstOrDefault();
+                if (user == null)
+                {
+                    MessageBox.Show("Ошибка! Пользователь с такими данными не найден.");
+                }
+                else
+                {
+                    MessageBox.Show("Вы успешно авторизовались!");
+                    MainWindow autWindow = new MainWindow();
+                    this.Close();
+                    autWindow.Show();
+                }
+            }
         }
     }
 }
