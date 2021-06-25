@@ -37,10 +37,9 @@
 
                     <ScrollViewer x:Name="list1" HorizontalAlignment="Left" Height="327" Margin="34,0,0,0" VerticalAlignment="Top" Width="729">
                         <Grid Height="974" Width="772">
-                            <DataGrid Height="285" Margin="223,10,65,0" VerticalAlignment="Top" Background="#FFC1FCFF"/>
-                            <DataGrid HorizontalAlignment="Left" Height="300" Margin="223,660,0,0" VerticalAlignment="Top" Width="484"  Background="#FFB4CFFD"/>
-                            <DataGrid HorizontalAlignment="Left" Height="300" Margin="223,330,0,0" VerticalAlignment="Top" Width="484" Background="#FF9AFDF0"/>
-                            <DataGrid HorizontalAlignment="Left" Height="300" Margin="223,330,0,0" VerticalAlignment="Top" Width="484" Background="#FF9AFDF0"/>
+                            <DataGrid x:Name="EqDg" Height="285" Margin="223,10,65,0" VerticalAlignment="Top" Background="#FFC1FCFF"/>
+                            <DataGrid x:Name="UnDg" HorizontalAlignment="Left" Height="300" Margin="223,660,0,0" VerticalAlignment="Top" Width="484"  Background="#FFB4CFFD"/>
+                            <DataGrid x:Name="RoomDg" HorizontalAlignment="Left" Height="300" Margin="223,330,0,0" VerticalAlignment="Top" Width="484" Background="#FFFD9A9A"/>
                             <Button Content="Добавить" x:Name="AddBut_Eq" HorizontalAlignment="Left" Margin="0,17,0,0" VerticalAlignment="Top" Width="133"  Height="28" Click="AddBut_Click"/>
                             <Button Content="Редактировать" x:Name="RedBut_Eq" HorizontalAlignment="Left" Margin="0,116,0,0" VerticalAlignment="Top" Width="133" Height="28" Click="RedBut_Eq_Click"/>
                             <Button Content="Удалить" x:Name="DelBut_Eq" HorizontalAlignment="Left" Margin="0,68,0,0" VerticalAlignment="Top" Width="133" Height="28" Click="DelBut_Eq_Click"/>
@@ -117,22 +116,22 @@
                     </Grid.ColumnDefinitions>
 
 
-                    <Button Content="" HorizontalAlignment="Left" Margin="11,229,0,0" VerticalAlignment="Top" Width="70" Height="64" RenderTransformOrigin="0.571,-0.879" BorderBrush="{x:Null}" Grid.Column="1">
+                    <Button Content="" HorizontalAlignment="Left" Margin="11,229,0,0" VerticalAlignment="Top" Width="70" Height="64" RenderTransformOrigin="0.571,-0.879" BorderBrush="{x:Null}" Grid.Column="1" Click="Button_Click_4">
                         <Button.Background>
                             <ImageBrush ImageSource="image/computermouse_78940.ico"/>
                         </Button.Background>
                     </Button>
-                    <Button Content="" HorizontalAlignment="Left" Margin="100,229,0,0" VerticalAlignment="Top" Width="79" Height="64" BorderBrush="{x:Null}" Grid.Column="1">
+                    <Button Content="" HorizontalAlignment="Left" Margin="100,229,0,0" VerticalAlignment="Top" Width="79" Height="64" BorderBrush="{x:Null}" Grid.Column="1" Click="Button_Click_5">
                         <Button.Background>
                             <ImageBrush ImageSource="image/desk-chair_96892.ico"/>
                         </Button.Background>
                     </Button>
-                    <Button Content="" HorizontalAlignment="Left" Margin="11,33,0,0" VerticalAlignment="Top" Width="74" BorderBrush="{x:Null}" Foreground="#DDFFFFFF" Height="56" Grid.Column="1">
+                    <Button Content="" HorizontalAlignment="Left" Margin="11,33,0,0" VerticalAlignment="Top" Width="74" BorderBrush="{x:Null}" Foreground="#DDFFFFFF" Height="56" Grid.Column="1" Click="Button_Click">
                         <Button.Background>
                             <ImageBrush ImageSource="image/comupter_desktop_mac_monitor_imac_display_screen_icon-icons.com_53482.ico"/>
                         </Button.Background>
                     </Button>
-                    <Button Content="" Margin="100,130,584,0" VerticalAlignment="Top" Height="54" RenderTransformOrigin="0.459,1.037" Grid.Column="1">
+                    <Button Content="" Margin="100,130,584,0" VerticalAlignment="Top" Height="54" RenderTransformOrigin="0.459,1.037" Grid.Column="1" Click="Button_Click_3">
                         <Button.Background>
                             <ImageBrush ImageSource="image/keyboard_78941.ico" Stretch="Uniform"/>
                         </Button.Background>
@@ -141,22 +140,22 @@
                         </Button.BorderBrush>
                     </Button>
                     <DataGrid x:Name="gridstats" HorizontalAlignment="Left" Height="291" Margin="197,33,0,0" VerticalAlignment="Top" Width="500" Background="#FFB8DFFF" Grid.Column="1"/>
-                    <Button Content="" HorizontalAlignment="Left" Margin="135,33,0,0" VerticalAlignment="Top" Width="34" Height="56" BorderBrush="{x:Null}" RenderTransformOrigin="-0.794,0.491" Grid.Column="1">
+                    <Button Content="" HorizontalAlignment="Left" Margin="135,33,0,0" VerticalAlignment="Top" Width="34" Height="56" BorderBrush="{x:Null}" RenderTransformOrigin="-0.794,0.491" Grid.Column="1" Click="Button_Click_1">
                         <Button.Background>
                             <ImageBrush ImageSource="image/pcunit_102232.ico"/>
                         </Button.Background>
                     </Button>
-                    <Button Content="" HorizontalAlignment="Left" Margin="3,128,0,0" VerticalAlignment="Top" Width="82" BorderBrush="{x:Null}" Height="56" Grid.Column="1">
+                    <Button Content="" HorizontalAlignment="Left" Margin="3,128,0,0" VerticalAlignment="Top" Width="82" BorderBrush="{x:Null}" Height="56" Grid.Column="1" Click="Button_Click_2">
                         <Button.Background>
                             <ImageBrush ImageSource="image/table_desk_icon_150978.ico"/>
                         </Button.Background>
                     </Button>
-                    <Button Content="" HorizontalAlignment="Left" Margin="11,320,0,0" VerticalAlignment="Top" Width="53" BorderBrush="{x:Null}" Height="45" Grid.Column="1">
+                    <Button Content="" HorizontalAlignment="Left" Margin="11,320,0,0" VerticalAlignment="Top" Width="53" BorderBrush="{x:Null}" Height="45" Grid.Column="1" Click="Button_Click_6">
                         <Button.Background>
                             <ImageBrush ImageSource="image/printer_78936 (1).ico"/>
                         </Button.Background>
                     </Button>
-                    <Button Content="" HorizontalAlignment="Left" Margin="100,314,0,0" VerticalAlignment="Top" Width="69" Height="51" BorderBrush="{x:Null}" Grid.Column="1">
+                    <Button Content="" HorizontalAlignment="Left" Margin="100,314,0,0" VerticalAlignment="Top" Width="69" Height="51" BorderBrush="{x:Null}" Grid.Column="1" Click="Button_Click_7">
                         <Button.Background>
                             <ImageBrush ImageSource="image/projector-with-big-len_icon-icons.com_68147.ico"/>
                         </Button.Background>

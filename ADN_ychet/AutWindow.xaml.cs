@@ -28,16 +28,6 @@ namespace ADN_ychet
 
         }
 
-        private void RegButton(object sender, RoutedEventArgs e)
-        {
-            reg Reg = new reg();
-            Reg.Show();
-            Close();
-        }
-        private void LoginButton(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("Вы возможно успешно авторизовались!");
-        }
 
         private void gif_MediaEnded(object sender, RoutedEventArgs e)
         {
@@ -70,7 +60,6 @@ namespace ADN_ychet
                 }
                 else
                 {
-                    MessageBox.Show("Вы успешно авторизовались!");
                     MainWindow autWindow = new MainWindow();
                     this.Close();
                     autWindow.Show();

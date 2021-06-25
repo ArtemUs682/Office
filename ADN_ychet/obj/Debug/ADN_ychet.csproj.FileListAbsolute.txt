@@ -267,3 +267,39 @@ Z:\МиАПО\Office\ADN_ychet\obj\Debug\ADN_ychet.csproj.CoreCompileInputs.cach
 Z:\МиАПО\Office\ADN_ychet\obj\Debug\ADN_ychet.csproj.CopyComplete
 Z:\МиАПО\Office\ADN_ychet\obj\Debug\ADN_ychet.exe
 Z:\МиАПО\Office\ADN_ychet\obj\Debug\ADN_ychet.pdb
+C:\Users\Artem\Desktop\Проекты (учёба)\Office\ADN_ychet\bin\Debug\OfficeDB.db
+C:\Users\Artem\Desktop\Проекты (учёба)\Office\ADN_ychet\bin\Debug\ADN_ychet.exe.config
+C:\Users\Artem\Desktop\Проекты (учёба)\Office\ADN_ychet\bin\Debug\ADN_ychet.exe
+C:\Users\Artem\Desktop\Проекты (учёба)\Office\ADN_ychet\bin\Debug\ADN_ychet.pdb
+C:\Users\Artem\Desktop\Проекты (учёба)\Office\ADN_ychet\bin\Debug\EntityFramework.dll
+C:\Users\Artem\Desktop\Проекты (учёба)\Office\ADN_ychet\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Artem\Desktop\Проекты (учёба)\Office\ADN_ychet\bin\Debug\MaterialDesignColors.dll
+C:\Users\Artem\Desktop\Проекты (учёба)\Office\ADN_ychet\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Artem\Desktop\Проекты (учёба)\Office\ADN_ychet\bin\Debug\System.Data.SQLite.dll
+C:\Users\Artem\Desktop\Проекты (учёба)\Office\ADN_ychet\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Artem\Desktop\Проекты (учёба)\Office\ADN_ychet\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Artem\Desktop\Проекты (учёба)\Office\ADN_ychet\bin\Debug\EntityFramework.xml
+C:\Users\Artem\Desktop\Проекты (учёба)\Office\ADN_ychet\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Artem\Desktop\Проекты (учёба)\Office\ADN_ychet\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Artem\Desktop\Проекты (учёба)\Office\ADN_ychet\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Artem\Desktop\Проекты (учёба)\Office\ADN_ychet\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Artem\Desktop\Проекты (учёба)\Office\ADN_ychet\bin\Debug\System.Data.SQLite.xml
+C:\Users\Artem\Desktop\Проекты (учёба)\Office\ADN_ychet\obj\Debug\ADN_ychet.csprojAssemblyReference.cache
+C:\Users\Artem\Desktop\Проекты (учёба)\Office\ADN_ychet\obj\Debug\AutWindow.g.cs
+C:\Users\Artem\Desktop\Проекты (учёба)\Office\ADN_ychet\obj\Debug\MainWindow.g.cs
+C:\Users\Artem\Desktop\Проекты (учёба)\Office\ADN_ychet\obj\Debug\reg.g.cs
+C:\Users\Artem\Desktop\Проекты (учёба)\Office\ADN_ychet\obj\Debug\App.g.cs
+C:\Users\Artem\Desktop\Проекты (учёба)\Office\ADN_ychet\obj\Debug\ADN_ychet_Content.g.cs
+C:\Users\Artem\Desktop\Проекты (учёба)\Office\ADN_ychet\obj\Debug\ADN_ychet_MarkupCompile.cache
+C:\Users\Artem\Desktop\Проекты (учёба)\Office\ADN_ychet\obj\Debug\ADN_ychet_MarkupCompile.lref
+C:\Users\Artem\Desktop\Проекты (учёба)\Office\ADN_ychet\obj\Debug\App.baml
+C:\Users\Artem\Desktop\Проекты (учёба)\Office\ADN_ychet\obj\Debug\AutWindow.baml
+C:\Users\Artem\Desktop\Проекты (учёба)\Office\ADN_ychet\obj\Debug\MainWindow.baml
+C:\Users\Artem\Desktop\Проекты (учёба)\Office\ADN_ychet\obj\Debug\reg.baml
+C:\Users\Artem\Desktop\Проекты (учёба)\Office\ADN_ychet\obj\Debug\ADN_ychet.g.resources
+C:\Users\Artem\Desktop\Проекты (учёба)\Office\ADN_ychet\obj\Debug\ADN_ychet.Properties.Resources.resources
+C:\Users\Artem\Desktop\Проекты (учёба)\Office\ADN_ychet\obj\Debug\ADN_ychet.csproj.GenerateResource.cache
+C:\Users\Artem\Desktop\Проекты (учёба)\Office\ADN_ychet\obj\Debug\ADN_ychet.csproj.CoreCompileInputs.cache
+C:\Users\Artem\Desktop\Проекты (учёба)\Office\ADN_ychet\obj\Debug\ADN_ychet.csproj.CopyComplete
+C:\Users\Artem\Desktop\Проекты (учёба)\Office\ADN_ychet\obj\Debug\ADN_ychet.exe
+C:\Users\Artem\Desktop\Проекты (учёба)\Office\ADN_ychet\obj\Debug\ADN_ychet.pdb
